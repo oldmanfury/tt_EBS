@@ -1,0 +1,25 @@
+#!/bin/bash
+
+## start pd
+#sudo /home/pi/pd-0.46-7/bin/pd -nogui -rt /home/pi/pdpatch/jh.tt/chord/tt_chord_GDS.pd  &
+#sudo /home/pi/pd-0.46-7/bin/pd -nogui -rt /home/pi/pdpatch/jh.tt/reso/tt_reso.pd  &
+#sudo /home/pi/pd-0.46-7/bin/pd -nogui -rt -midiindev 2 /home/pi/pdpatch/vinylizer/TT_warp.pd
+#sudo /home/pi/pd-0.46-7/bin/pd -nogui -rt -midiindev 2 /home/pi/pdpatch/AUTOMATONISM_1.0/main.pd
+#sudo /home/pi/pd-0.46-7/bin/pd -stderr -nogui -rt -midiindev 0,1 /home/pi/pdpatch/organelle/tt-organelle/tt-desktop.pd 2>&1| python /home/pi/Adafruit_Python_SSD1306/examples/ttdisplay.py
+
+#sudo /home/pi/pd-0.46-7/bin/pd -nogui -rt -midiindev 0,1 /home/pi/pdpatch/organelle/tt-organelle/tt-desktop.pd |& python /home/pi/Adafruit_Python_SSD1306/examples/ttdisplay.py
+
+#sudo /home/pi/pd-0.46-7/bin/pd -nogui -rt -midiindev 0,1 /home/pi/pdpatch/tt-EBS.pd |& python /home/pi/Adafruit_Python_SSD1306/examples/ttdisplay.py
+# works - three line display
+sudo /home/pi/pd-0.46-7/bin/pd -nogui -rt -midiindev 0,1 /home/pi/pdpatch/tt-EBS.pd |& python /home/pi/pdpatch/ttplot.py
+
+#sudo /home/pi/pd-0.46-7/bin/pd -nogui -rt  -midiindev 0,1 /home/pi/pdpatch/organelle/tt-organelle/tt-desktop.pd
+#sudo /home/pi/pd-0.46-7/bin/pd -nogui -rt  -midiindev 0,1 /home/pi/pdpatch/organelle/tt-organelle/test.pd
+#sudo /home/pi/pd-0.46-7/bin/pd -nogui -rt -r 48000 -audiobuf 8 -midiindev 0,1 /home/pi/pdpatch/organelle/tt-organelle/tt-desktop.pd
+## the stuff below is needed only if/when using adc2FUDI:
+## pull up the GPIO for buttons: 
+# sudo python /home/pi/pullup.py
+## pause a little
+# sleep 5
+## start the ADC + interrupts
+# sudo /home/pi/PD/adc2FUDI 127.0.0.1 54321 5 &
