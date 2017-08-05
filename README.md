@@ -54,7 +54,7 @@ rest reverse pitch stutter
 turn it to 15 and you get them all on (1111).  Half-way up you get (0111) everything but rests.
 
 Digital inputs
-D1 - triggers each step.  Needs to be playing, and it does some unintended things right now.  Will be useful for syncing playback with your synth.  Right now - kind of irritating.
+D1 - triggers each step.  Loop needs to be playing, and it does some unintended things right now.  Will be useful for syncing playback with your synth.  Right now - kind of irritating.
 D2 - start/stop once you arm for recording
 D3 - re-calculate randomness.  Can also change knob one up and down to re-do the random selection.
 
