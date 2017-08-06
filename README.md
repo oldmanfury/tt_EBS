@@ -19,15 +19,15 @@ making sure the paths are right for your installation.
 Now you need to install your loop files on the tt and on your pc.  Once they're in a folder called loops you need to create a text file list of the files.  You can do this with something like 
 "dir/w > list.txt" on your PC or with  "ls > list.txt"  I can't remember the exact syntax.  You want a text file with each filename (no path) on each line.  Add rec.wav to the top of the list (this is your recording-on-the-fly file).  Once your list.txt file is done for the tt or your PC, put it in the folder.  It should look like:
 
-rec.wav
+  rec.wav
 
-DC_BLINE04_170_C.WAV
+  DC_BLINE04_170_C.WAV
 
-DC_BLINE09_175_C.WAV
+  DC_BLINE09_175_C.WAV
 
-DC_BLINE20_170_C.WAV
+  DC_BLINE20_170_C.WAV
 
-etc.
+  etc.
 
 Copy one of your WAV files (or AIFF) and rename it rec.wav so that PD can find it when you run the patch.  This step might not be necessary, but it isn’t hard.
 
