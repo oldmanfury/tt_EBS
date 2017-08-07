@@ -16,6 +16,10 @@ sudo /home/pi/pd-0.46-7/bin/pd -nogui -rt /home/pi/pdpatch/tt-EBS.pd |& python /
 
 making sure the paths are right for your installation. 
 
+In ttplot.py - you need to point font2 at a font installed on your tt - check usr/share/fonts/truetype/ and select one that you have.  I used Roboto-Bold.ttf, but not everyone has that.  The line you need to edit is :
+font2 = ImageFont.truetype("/usr/share/fonts/truetype/roboto/Roboto-Bold.ttf",14)
+
+
 Now you need to install your loop files on the tt and on your pc.  Once they're in a folder called loops you need to create a text file list of the files.  You can do this with something like 
 "dir/w > list.txt" on your PC or with  "ls > list.txt"  I can't remember the exact syntax.  You want a text file with each filename (no path) on each line.  Add rec.wav to the top of the list (this is your recording-on-the-fly file).  Once your list.txt file is done for the tt or your PC, put it in the folder.  It should look like:
 
