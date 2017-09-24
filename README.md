@@ -12,7 +12,7 @@ ttplot.py is the OLED script.
 
 in pdpd (the batch file that runs puredata - I attached my version for reference, but you should use your original) change the puredata execute command to 
 
-sudo /home/pi/pd-0.46-7/bin/pd -nogui -rt /home/pi/pdpatch/tt-EBS.pd |& python /home/pi/pdpatch/ttplot.py
+sudo /home/pi/pd-0.46-7/bin/pd -nogui -rt /home/pi/pdpatch/tt-EBS.pd |& python /home/pi/pdpatch/tt-EBS.py
 
 making sure the paths are right for your installation. 
 
