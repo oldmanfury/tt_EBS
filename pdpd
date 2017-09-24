@@ -11,7 +11,7 @@
 
 #sudo /home/pi/pd-0.46-7/bin/pd -nogui -rt -midiindev 0,1 /home/pi/pdpatch/tt-EBS.pd |& python /home/pi/Adafruit_Python_SSD1306/examples/ttdisplay.py
 # works - three line display
-sudo /home/pi/pd-0.46-7/bin/pd -nogui -rt -midiindev 0,1 /home/pi/pdpatch/tt-EBS.pd |& python /home/pi/pdpatch/ttplot.py
+sudo /home/pi/pd-0.46-7/bin/pd -nogui -rt -midiindev 0,1 /home/pi/pdpatch/tt-EBS.pd |& python /home/pi/pdpatch/tt-EBS.py
 
 #sudo /home/pi/pd-0.46-7/bin/pd -nogui -rt  -midiindev 0,1 /home/pi/pdpatch/organelle/tt-organelle/tt-desktop.pd
 #sudo /home/pi/pd-0.46-7/bin/pd -nogui -rt  -midiindev 0,1 /home/pi/pdpatch/organelle/tt-organelle/test.pd
